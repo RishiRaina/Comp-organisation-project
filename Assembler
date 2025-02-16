@@ -190,6 +190,7 @@ def R_type_instruction(instruction):
         rs2= str(decimal_to_binary(ABI_encoding[instruction[2]],'R'))
         output = func7 +' '+ rs2 + ' '+ rs1 +' '+ func3 +' '+ rd + ' '+ opcode
         print(output)
+        
 
     elif instruction[0].strip()=='and':
         opcode = str(riscv_opcodes['and'])
